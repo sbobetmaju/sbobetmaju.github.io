@@ -112,8 +112,44 @@
   <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css" />
   <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css" />
   <link rel="stylesheet" media="screen" href="vendor/lightgallery.js/dist/css/lightgallery.min.css" />
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
   <!-- Main Theme Styles + Bootstrap-->
   <link rel="stylesheet" media="screen" href="css/theme.min.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Apa saja yang perlu saya ketahui tentang akun SBOBET?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pelajari langkah-langkah untuk membuka akun SBOBET, pengaktifan akun baru Anda dan bagaimana caranya agar Anda bisa mengatur akun Anda melalui berbagai pengaturan akun. Pelajari bagaimana caranya agar Anda bisa menggunakan bantuan akun SBOBET untuk mendapatkan kembali nama login Anda atau untuk mengatur ulang kata sandi Anda jika Anda lupa nama login SBOBET atau kata sandi Anda."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Kenapa saya harus memilih SBOBET?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Trust, value, speed – ini adalah tiga kekuatan utama yang mendorong SBOBET untuk maju. Nilai yang kami junjung tinggi adalah janji kami untuk memberikan pengalaman bertaruh terbaik kepada para pemain di situs kami."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Penyedia pelayanan internet saya memblokir login ke SBOBET saya, apa yang bisa saya lakukan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SBOBET dilisensikan oleh Pemerintahan Isle of Man, memperbolehkan kita untuk bertransaksi bersama seluruh komunitas internasional. Akan tetapi, beberapa negara menerapkan hukum yang melarang permainan online. Sehingga penting untuk memastikan kepatuhan hukum lokal atau hukum nasional yang berlaku untuk Anda. Anda juga dapat menghubungi ISP (Internet Service Provider / Penyedia Pelayanan Internet) Anda berkaitan dengan hal ini."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Apakah SBOBET beroperasi dengan lisensi yang legal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Operasi SBOBET di Asia dilisensikan oleh Pemerintahan Republik Filipina dan di Eropa dilisensikan oleh Pemerintahan Isle of Man sebagai bookmaker online bertaraf internasional."
+        }
+      }]
+    }
+  </script>
 </head>
 <!-- Body-->
 <body>
@@ -125,78 +161,6 @@
     </div>
   </div>
   <main class="cs-page-wrapper">
-    <!-- Sign In Modal-->
-    <div class="modal fade" id="modal-signin" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content border-0">
-          <div class="cs-view show" id="modal-signin-view">
-            <div class="modal-header border-0 bg-dark px-4">
-              <h4 class="modal-title text-light">Sign in</h4>
-              <button class="close text-light" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body px-4">
-              <p class="font-size-ms text-muted">Sign in to your account using email and password provided during registration.</p>
-              <form class="needs-validation" novalidate>
-                <div class="input-group-overlay form-group">
-                  <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="fe-mail"></i></span></div>
-                  <input class="form-control prepended-form-control" type="email" placeholder="Email" required>
-                </div>
-                <div class="input-group-overlay cs-password-toggle form-group">
-                  <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="fe-lock"></i></span></div>
-                  <input class="form-control prepended-form-control" type="password" placeholder="Password" required>
-                  <label class="cs-password-toggle-btn">
-                    <input class="custom-control-input" type="checkbox"><i class="fe-eye cs-password-toggle-indicator"></i><span class="sr-only">Show password</span>
-                  </label>
-                </div>
-                <div class="d-flex justify-content-between align-items-center form-group">
-                  <div class="custom-control custom-checkbox">
-                    <input class="custom-control-input" type="checkbox" id="keep-signed">
-                    <label class="custom-control-label" for="keep-signed">Keep me signed in</label>
-                  </div><a class="nav-link-style font-size-ms" href="password-recovery.html">Forgot password?</a>
-                </div>
-                <button class="btn btn-primary btn-block" type="submit">Sign in</button>
-                <p class="font-size-sm pt-3 mb-0">Don't have an account? <a href='#' class='font-weight-medium' data-view='#modal-signup-view'>Sign up</a></p>
-              </form>
-            </div>
-          </div>
-          <div class="cs-view" id="modal-signup-view">
-            <div class="modal-header border-0 bg-dark px-4">
-              <h4 class="modal-title text-light">Sign up</h4>
-              <button class="close text-light" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body px-4">
-              <p class="font-size-ms text-muted">Registration takes less than a minute but gives you full control over your orders.</p>
-              <form class="needs-validation" novalidate>
-                <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Full name" required>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Email" required>
-                </div>
-                <div class="cs-password-toggle form-group">
-                  <input class="form-control" type="password" placeholder="Password" required>
-                  <label class="cs-password-toggle-btn">
-                    <input class="custom-control-input" type="checkbox"><i class="fe-eye cs-password-toggle-indicator"></i><span class="sr-only">Show password</span>
-                  </label>
-                </div>
-                <div class="cs-password-toggle form-group">
-                  <input class="form-control" type="password" placeholder="Confirm password" required>
-                  <label class="cs-password-toggle-btn">
-                    <input class="custom-control-input" type="checkbox"><i class="fe-eye cs-password-toggle-indicator"></i><span class="sr-only">Show password</span>
-                  </label>
-                </div>
-                <button class="btn btn-primary btn-block" type="submit">Sign up</button>
-                <p class="font-size-sm pt-3 mb-0">Already have an account? <a href='#' class='font-weight-medium' data-view='#modal-signin-view'>Sign in</a></p>
-              </form>
-            </div>
-          </div>
-          <div class="modal-body text-center px-4 pt-2 pb-4">
-            <hr>
-            <p class="font-size-sm font-weight-medium text-heading pt-4">Or sign in with</p><a class="social-btn sb-facebook sb-lg mx-1 mb-2" href="#"><i class="fe-facebook"></i></a><a class="social-btn sb-twitter sb-lg mx-1 mb-2" href="#"><i class="fe-twitter"></i></a><a class="social-btn sb-instagram sb-lg mx-1 mb-2" href="#"><i class="fe-instagram"></i></a><a class="social-btn sb-google sb-lg mx-1 mb-2" href="#"><i class="fe-google"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Navbar (Floating dark)-->
     <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
     <header class="cs-header navbar navbar-expand-lg navbar-light navbar-floating navbar-sticky" data-scroll-header>
@@ -220,23 +184,20 @@
           <div class="cs-offcanvas-body">
             <!-- Menu-->
             <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#home" data-scroll>Home</a>
+              <li class="nav-item">
+                <a class="nav-link" data-scroll href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" data-scroll href="#why">Kenapa Kami</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" data-scroll href="#contact">Kontak</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" data-scroll href="#payment">Pembayaran</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" data-scroll href="#faq">FAQ</a>
               </li>
             </ul>
           </div>
@@ -295,27 +256,30 @@
     <section class="container py-5 py-md-6 py-lg-7">
       <div class="row pt-2">
         <div class="col-sm-4 mb-grid-gutter pb-1">
-          <div class="mx-auto text-center" style="max-width: 278px;"><img class="d-inline-block mb-3" width="56" src="img/demo/software-landing/icons/01.svg" alt="Simple" />
-            <h3 class="h5">Simple</h3>
-            <p class="font-size-sm mb-0">Find aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <div class="mx-auto text-center" style="max-width: 278px;">
+            <i style="font-size: 3em;" class="fas fa-handshake mb-2"></i>
+            <h3 class="h5">TRUST (Kepercayaan)</h3>
+            <p class="font-size-sm mb-0">Kepercayaan berarti Anda akan selalu mendapatkan bantuan kapan saja Anda memerlukannya.</p>
           </div>
         </div>
         <div class="col-sm-4 mb-grid-gutter pb-1">
-          <div class="mx-auto text-center" style="max-width: 278px;"><img class="d-inline-block mb-3" width="56" src="img/demo/software-landing/icons/02.svg" alt="Fast" />
-            <h3 class="h5">Fast</h3>
-            <p class="font-size-sm mb-0">Find aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <div class="mx-auto text-center" style="max-width: 278px;">
+            <i style="font-size: 3em;" class="fas fa-hand-holding-heart mb-2"></i>
+            <h3 class="h5">VALUE (Kualitas)</h3>
+            <p class="font-size-sm mb-0">Jumlah apapun yang Anda pertaruhkan, pemenang selalu disambut dengan baik di SBOBET. </p>
           </div>
         </div>
         <div class="col-sm-4 mb-grid-gutter pb-1">
-          <div class="mx-auto text-center" style="max-width: 278px;"><img class="d-inline-block mb-3" width="67" src="img/demo/software-landing/icons/03.svg" alt="Organized" />
-            <h3 class="h5">Organized</h3>
-            <p class="font-size-sm mb-0">Find aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <div class="mx-auto text-center" style="max-width: 278px;">
+            <i style="font-size: 3em;" class="fas fa-tachometer-alt mb-2"></i>
+            <h3 class="h5">SPEED (Kecepatan)</h3>
+            <p class="font-size-sm mb-0">Kami bertindak cepat karena kami mengerti waktu adalah hal yang penting bagi Anda.</p>
           </div>
         </div>
       </div>
     </section>
     <!-- Split section (Video popup)-->
-    <section class="bg-secondary">
+    <section id="why" class="bg-secondary">
       <div class="row no-gutters">
         <div class="col-md-6 py-7 bg-size-cover order-md-2 overflow-hidden" style="background-image: url(img/thumbnail.jpg);"><span class="bg-overlay" style="opacity: 35%;"></span>
           <div class="bg-overlay-content d-flex flex-column align-items-center justify-content-center h-100 px-3 py-4 py-lg-7"><a class="cs-video-btn" href="https://www.youtube.com/watch?v=T8y0PHmLMW0" data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Instagram Marketing Conference 2020&lt;/h6&gt;"></a></div>
@@ -327,131 +291,77 @@
         </div>
         <div class="col-md-6 px-3 pl-xl-0 pr-lg-5 pr-xl-7 py-2 py-lg-4 order-md-1">
           <div class="ml-md-auto mr-sm-7 py-5 my-sm-0 py-md-6 py-lg-7" style="max-width: 400px;">
-            <h2 class="mb-3 pb-1">How it works</h2>
-            <p>Find aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint.</p>
+            <h3 class="mb-3 pb-1">Kenapa saya harus memilih SBOBET?</h3>
             <ul class="list-unstyled font-size-sm">
-              <li class="d-flex align-items-center"><i class="fe-check-circle font-size-lg mr-2"></i><span>Excepteur sint</span></li>
-              <li class="d-flex align-items-center"><i class="fe-check-circle font-size-lg mr-2"></i><span>Quam lacus suspendisse</span></li>
-              <li class="d-flex align-items-center"><i class="fe-check-circle font-size-lg mr-2"></i><span>Elementum pulvinar etiam</span></li>
+              <li class="d-flex align-items-center"><i class="fe-check-circle font-size-lg mr-2"></i><span>Pilihan Pertandingan-Pertandingan Terlengkap</span></li>
+              <li class="d-flex align-items-center"><i class="fe-check-circle font-size-lg mr-2"></i><span>Akses Kapan Saja dan Di Mana Saja</span></li>
+              <li class="d-flex align-items-center"><i class="fe-check-circle font-size-lg mr-2"></i><span>Kompatibilitas Browser yang Luas</span></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
     <!-- Features section #2-->
-    <section class="container py-5 py-md-6 py-lg-7">
+    <section id="contact" class="container py-5 py-md-6 py-lg-7">
       <div class="row align-items-center pt-3 pt-md-0">
-        <div class="col-md-7"><img class="d-block mx-auto" width="705" src="img/demo/software-landing/features.jpg" alt="Features" />
+        <div class="col-md-7">
+          <img class="d-block mx-auto img-fluid" width="705" src="img/sbobet-girl.png" alt="Features" />
         </div>
         <div class="col-xl-4 col-md-5 offset-xl-1 pt-5 pt-md-0">
-          <h2 class="mb-3 text-center text-md-left">Organize your work anywhere</h2>
-          <p class="text-center text-md-left">Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <h2 class="mb-3 text-center text-md-left">Hubungi Kami</h2>
           <div class="row pt-5">
-            <div class="col-6 pb-1 mb-grid-gutter"><img class="d-block mb-3" width="29" src="img/demo/software-landing/icons/04.svg" alt="Easy to edit" />
-              <h3 class="h6">Easy to edit</h3>
-              <p class="font-size-sm mb-0">Find aute irure dolor in reprehenderit in volatekal</p>
+            <div class="col-6 pb-1 mb-grid-gutter">
+              <i style="font-size: 3em;" class="fab fa-whatsapp d-block mb-3"></i>
+              <h3 class="h6">Whatsapp</h3>
+              <p class="font-size-sm mb-0">+639096664666</p>
             </div>
-            <div class="col-6 pb-1 mb-grid-gutter"><img class="d-block mb-3" width="28" src="img/demo/software-landing/icons/05.svg" alt="Upload files" />
-              <h3 class="h6">Upload files</h3>
-              <p class="font-size-sm mb-0">Find aute irure dolor in reprehenderit in volatekal</p>
+            <div class="col-6 pb-1 mb-grid-gutter">
+              <i style="font-size: 3em;" class="fab fa-twitter d-block mb-3"></i>
+              <h3 class="h6">Twitter</h3>
+              <p class="font-size-sm mb-0">Sbobet</p>
             </div>
-            <div class="col-6 pb-1 mb-grid-gutter"><img class="d-block mb-3" width="26" src="img/demo/software-landing/icons/06.svg" alt="Control schedule" />
-              <h3 class="h6">Control schedule</h3>
-              <p class="font-size-sm mb-0">Find aute irure dolor in reprehenderit in volatekal</p>
+            <div class="col-6 pb-1 mb-grid-gutter">
+              <i style="font-size: 3em;" class="fab fa-instagram d-block mb-3"></i>
+              <h3 class="h6">Instagram</h3>
+              <p class="font-size-sm mb-0">Sbobet</p>
             </div>
-            <div class="col-6 pb-1 mb-grid-gutter"><img class="d-block mb-3" width="36" src="img/demo/software-landing/icons/07.svg" alt="Mark tasks" />
-              <h3 class="h6">Mark tasks</h3>
-              <p class="font-size-sm mb-0">Find aute irure dolor in reprehenderit in volatekal</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Pricing-->
-    <section class="pt-lg-3">
-      <h2 class="d-block bg-gradient text-light text-center py-5 px-3 mb-5">Pricing plans</h2>
-      <div class="container pt-2">
-        <div class="d-sm-flex align-items-center justify-content-center text-center text-sm-left">
-          <h3 class="mb-4 mb-sm-2 mr-sm-4 pr-sm-2">Work efficiently with your team</h3><a class="btn btn-success mb-sm-2" href="#">Sign up for free</a>
-        </div>
-        <div class="row justify-content-center pt-5">
-          <div class="col-lg-10">
-            <div class="bg-light box-shadow-lg rounded-lg pt-3 px-4">
-              <div class="cs-pricing-wrap pt-3 px-3">
-                <div class="cs-price-switch justify-content-end"><span class="cs-price-label mr-2">Monthly</span>
-                  <div class="custom-control custom-switch">
-                    <input class="custom-control-input" type="checkbox" id="priceSwitch">
-                    <label class="custom-control-label" for="priceSwitch"></label>
-                  </div><span class="cs-price-label ml-1">Annual</span>
-                </div>
-                <div class="d-md-flex align-items-start border-bottom py-4 py-sm-5">
-                  <div class="ml-4 ml-sm-0 py-2 w-100" style="max-width: 15rem;">
-                    <h3 class="mb-2">Free</h3>
-                    <div class="font-size-xs" style="max-width: 10rem;">Find aute irure dolor in reprehenderit in volatek</div>
-                  </div>
-                  <div class="d-flex w-100 align-items-end py-3 py-sm-2 px-4" style="max-width: 20rem;"><span class="h2 font-weight-normal text-muted mb-1 mr-2">$</span><span class="cs-price display-2 font-weight-normal text-primary px-1 mr-2" data-current-price="0" data-new-price="0">0</span><span class="h3 font-size-lg font-weight-medium text-muted mb-2">per<br>month</span></div>
-                  <ul class="list-unstyled py-2 mb-0">
-                    <li class="d-flex align-items-center text-nowrap mb-3"><i class="fe-check font-size-xl text-primary mr-2"></i><span>Up to 3 projects for each member</span></li>
-                    <li class="d-flex align-items-center text-nowrap mb-3"><i class="fe-check font-size-xl text-primary mr-2"></i><span>2 team members allowed</span></li>
-                  </ul>
-                </div>
-                <div class="d-md-flex align-items-start py-4 py-sm-5">
-                  <div class="ml-4 ml-sm-0 py-2 w-100" style="max-width: 15rem;">
-                    <h3 class="mb-2">Standard</h3>
-                    <div class="font-size-xs" style="max-width: 10rem;">Find aute irure dolor in reprehenderit in volatek</div>
-                  </div>
-                  <div class="d-flex w-100 align-items-end py-3 py-sm-2 px-4" style="max-width: 20rem;"><span class="h2 font-weight-normal text-muted mb-1 mr-2">$</span><span class="cs-price display-2 font-weight-normal text-primary px-1 mr-2" data-current-price="15" data-new-price="12">0</span><span class="h3 font-size-lg font-weight-medium text-muted mb-2">per<br>month</span></div>
-                  <ul class="list-unstyled py-2 mb-0">
-                    <li class="d-flex align-items-center text-nowrap mb-3"><i class="fe-check font-size-xl text-primary mr-2"></i><span>Unlimited number of projects</span></li>
-                    <li class="d-flex align-items-center text-nowrap mb-3"><i class="fe-check font-size-xl text-primary mr-2"></i><span>Up to 5 team members</span></li>
-                    <li class="d-flex align-items-center text-nowrap mb-3"><i class="fe-check font-size-xl text-primary mr-2"></i><span>24/7 support</span></li>
-                    <li class="d-flex align-items-center text-nowrap mb-3"><i class="fe-check font-size-xl text-primary mr-2"></i><span>Up to 30GB storage space</span></li>
-                  </ul>
-                </div>
-              </div>
+            <div class="col-6 pb-1 mb-grid-gutter">
+              <i style="font-size: 3em;" class="fab fa-facebook d-block mb-3"></i>
+              <h3 class="h6">Facebook</h3>
+              <p class="font-size-sm mb-0">Sbobet</p>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Clients (logos)-->
-    <section class="container pt-5">
+    <section id="payment" class="container pt-5">
       <div class="row justify-content-center pt-2 pt-md-4">
         <div class="col-lg-10">
-          <h2 class="h3 pb-4 text-center text-md-left">Trusted by great companies</h2>
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start"><a class="cs-swap-image mb-4 mr-4 pr-3" href="#"><img class="cs-swap-to" width="180" src="img/demo/software-landing/clients/01_color.png" alt="Logo" /><img class="cs-swap-from" width="180" src="img/demo/software-landing/clients/01_gray.png" alt="Logo" /></a><a class="cs-swap-image mb-4 mr-4 pr-3" href="#"><img class="cs-swap-to" width="114" src="img/demo/software-landing/clients/02_color.png" alt="Logo" /><img class="cs-swap-from" width="114" src="img/demo/software-landing/clients/02_gray.png" alt="Logo" /></a><a class="cs-swap-image mb-4 mr-4 pr-3" href="#"><img class="cs-swap-to" width="130" src="img/demo/software-landing/clients/03_color.png" alt="Logo" /><img class="cs-swap-from" width="130" src="img/demo/software-landing/clients/03_gray.png" alt="Logo" /></a><a class="cs-swap-image mb-4 mr-4 pr-3" href="#"><img class="cs-swap-to" width="103" src="img/demo/software-landing/clients/04_color.png" alt="Logo" /><img class="cs-swap-from" width="103" src="img/demo/software-landing/clients/04_gray.png" alt="Logo" /></a><a class="cs-swap-image mb-4 mr-4 pr-3" href="#"><img class="cs-swap-to" width="143" src="img/demo/software-landing/clients/05_color.png" alt="Logo" /><img class="cs-swap-from" width="143" src="img/demo/software-landing/clients/05_gray.png" alt="Logo" /></a><a class="cs-swap-image mb-4" href="#"><img class="cs-swap-to" width="136" src="img/demo/software-landing/clients/06_color.png" alt="Logo" /><img class="cs-swap-from" width="136" src="img/demo/software-landing/clients/06_gray.png" alt="Logo" /></a></div>
-        </div>
-      </div>
-    </section>
-    <!-- Solutions-->
-    <section class="container bg-overlay-content pt-5 pt-md-6 pt-lg-7">
-      <h2 class="text-center pt-3 pt-md-0 mb-5">More solutions for you</h2>
-      <div class="row">
-        <div class="col-sm-6 mb-grid-gutter">
-          <div class="bg-light box-shadow rounded-lg py-5 px-4">
-            <div class="media d-block d-xl-flex align-items-center px-lg-3 py-xl-2 text-center text-sm-left"><img class="d-inline-block mb-3 mb-xl-0" width="140" src="img/demo/software-landing/team.png" alt="Team" />
-              <div class="media-body pl-xl-3 ml-xl-3">
-                <h3 class="h4 text-primary pb-1">For Teams</h3>
-                <p>Aute irure dolor in reprehenderit in volup tate velit esse cillum dolore eu fugiat nulla pariatur sed quia consequuntur.</p><a class="nav-link-style" href="#">Read more<i class="fe-chevron-right font-size-xl ml-1"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 mb-grid-gutter">
-          <div class="bg-light box-shadow rounded-lg py-5 px-4">
-            <div class="media d-block d-xl-flex align-items-center px-lg-3 py-xl-2 text-center text-sm-left"><img class="d-inline-block mb-3 mb-xl-0" width="140" src="img/demo/software-landing/freelancer.png" alt="Freelancer" />
-              <div class="media-body pl-xl-3 ml-xl-3">
-                <h3 class="h4 text-primary pb-1">For Freelancers</h3>
-                <p>Aute irure dolor in reprehenderit in volup tate velit esse cillum dolore eu fugiat nulla pariatur sed quia consequuntur.</p><a class="nav-link-style" href="#">Read more<i class="fe-chevron-right font-size-xl ml-1"></i></a>
-              </div>
-            </div>
+          <h2 class="h3 pb-4 text-center text-md-left">Metode Pembayaran</h2>
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start">
+            <a class="cs-swap-image mb-4 mr-4 pr-3" href="#">
+              <img class="cs-swap-to" width="180" src="img/pembayaran/visa.png" alt="Logo" />
+              <img class="cs-swap-from" width="143" src="img/pembayaran/visa.png" alt="Logo" />
+            </a>
+            <a class="cs-swap-image mb-4 mr-4 pr-3" href="#">
+              <img class="cs-swap-to" width="180" src="img/pembayaran/mastercard.png" alt="Logo" />
+              <img class="cs-swap-from" width="143" src="img/pembayaran/mastercard.png" alt="Logo" />
+            </a>
+            <a class="cs-swap-image mb-4 mr-4 pr-3" href="#">
+              <img class="cs-swap-to" width="180" src="img/pembayaran/neteller.png" alt="Logo" />
+              <img class="cs-swap-from" width="143" src="img/pembayaran/neteller.png" alt="Logo" />
+            </a>
+            <a class="cs-swap-image mb-4 mr-4 pr-3" href="#">
+              <img class="cs-swap-to" width="180" src="img/pembayaran/skrill.png" alt="Logo" />
+              <img class="cs-swap-from" width="143" src="img/pembayaran/skrill.png" alt="Logo" />
+            </a>
           </div>
         </div>
       </div>
     </section>
     <!-- Q&A-->
-    <section class="position-relative bg-secondary py-5 py-md-6 py-lg-7" style="margin-top: -200px;">
-      <div style="height: 200px;"></div>
+    <section id="faq" class="position-relative bg-secondary py-5 py-md-6 py-lg-7">
       <div class="cs-shape cs-shape-top cs-shape-curve bg-body">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
           <path fill="currentColor" d="M3000,185.4V0H0v185.4C496.4,69.8,996.4,12,1500,12S2503.6,69.8,3000,185.4z"></path>
@@ -464,45 +374,49 @@
             <div class="accordion accordion-alt" id="faq">
               <div class="card border-0 box-shadow card-active">
                 <div class="card-header">
-                  <h3 class="accordion-heading"><a href="#faq-1" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="faq-1">Can I import my projects from Teamwork?<span class="accordion-indicator"></span></a></h3>
+                  <h3 class="accordion-heading"><a href="#faq-1" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="faq-1">Apa saja yang perlu saya ketahui tentang akun SBOBET?<span class="accordion-indicator"></span></a></h3>
                 </div>
                 <div class="collapse show" id="faq-1" data-parent="#faq">
                   <div class="card-body font-size-sm">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.</p>
-                    <p class="mb-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    <p>Pelajari langkah-langkah untuk membuka akun SBOBET, pengaktifan akun baru Anda dan bagaimana caranya agar Anda bisa mengatur akun Anda melalui berbagai pengaturan akun. Pelajari bagaimana caranya agar Anda bisa menggunakan bantuan akun SBOBET untuk mendapatkan kembali nama login Anda atau untuk mengatur ulang kata sandi Anda jika Anda lupa nama login SBOBET atau kata sandi Anda.</p>
+                    <p class="mb-0">
+                      <ul>
+                        <li><a target="_blank" href="http://info.sbobet.com/id-id/category/23/">Membuka Akun SBOBET</a></li>
+                        <li><a target="_blank" href="http://info.sbobet.com/id-id/category/25/">Mengatur Akun Anda</a></li>
+                        <li><a target="_blank" href="http://info.sbobet.com/id-id/category/26/">Bantuan Akun</a></li>
+                      </ul>
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="card border-0 box-shadow">
                 <div class="card-header">
-                  <h3 class="accordion-heading"><a class="collapsed" href="#faq-2" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="faq-2">What are correct file permissions?<span class="accordion-indicator"></span></a></h3>
+                  <h3 class="accordion-heading"><a class="collapsed" href="#faq-2" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="faq-2">Kenapa saya harus memilih SBOBET?<span class="accordion-indicator"></span></a></h3>
                 </div>
                 <div class="collapse" id="faq-2" data-parent="#faq">
                   <div class="card-body font-size-sm">
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.</p>
+                    <p>Trust, value, speed – ini adalah tiga kekuatan utama yang mendorong SBOBET untuk maju. Nilai yang kami junjung tinggi adalah janji kami untuk memberikan pengalaman bertaruh terbaik kepada para pemain di situs kami.</p>
                   </div>
                 </div>
               </div>
               <div class="card border-0 box-shadow">
                 <div class="card-header">
-                  <h3 class="accordion-heading"><a class="collapsed" href="#faq-3" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="faq-3">How to set default projects for new users?<span class="accordion-indicator"></span></a></h3>
+                  <h3 class="accordion-heading"><a class="collapsed" href="#faq-3" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="faq-3">Penyedia pelayanan internet saya memblokir login ke SBOBET saya, apa yang bisa saya lakukan?<span class="accordion-indicator"></span></a></h3>
                 </div>
                 <div class="collapse" id="faq-3" data-parent="#faq">
                   <div class="card-body font-size-sm">
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.</p>
+                    <p>SBOBET dilisensikan oleh Pemerintahan Isle of Man, memperbolehkan kita untuk bertransaksi bersama seluruh komunitas internasional. Akan tetapi, beberapa negara menerapkan hukum yang melarang permainan online. Sehingga penting untuk memastikan kepatuhan hukum lokal atau hukum nasional yang berlaku untuk Anda.</p>
+                    <p class="mb-0">Anda juga dapat menghubungi ISP (Internet Service Provider / Penyedia Pelayanan Internet) Anda berkaitan dengan hal ini.</p>
                   </div>
                 </div>
               </div>
               <div class="card border-0 box-shadow">
                 <div class="card-header">
-                  <h3 class="accordion-heading"><a class="collapsed" href="#faq-4" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="faq-4">Is it possible to upload files from Google Drive?<span class="accordion-indicator"></span></a></h3>
+                  <h3 class="accordion-heading"><a class="collapsed" href="#faq-4" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="faq-4">Apakah SBOBET beroperasi dengan lisensi yang legal?<span class="accordion-indicator"></span></a></h3>
                 </div>
                 <div class="collapse" id="faq-4" data-parent="#faq">
                   <div class="card-body font-size-sm">
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.</p>
+                    <p>Operasi SBOBET di Asia dilisensikan oleh <a target="_blank" href="http://www.pagcor.ph/">Pemerintahan Republik Filipina</a> dan di Eropa dilisensikan oleh <a target="_blank" href="http://www.gov.im/gambling/">Pemerintahan Isle of Man</a> sebagai bookmaker online bertaraf internasional.</p>
                   </div>
                 </div>
               </div>
@@ -512,7 +426,7 @@
       </div>
     </section>
     <!-- CTA-->
-    <section class="bg-gradient py-5">
+    <!-- <section class="bg-gradient py-5">
       <div class="container py-2 py-sm-4">
         <div class="row align-items-center">
           <div class="col-xl-6 col-md-7 mb-5 mb-md-0">
@@ -531,31 +445,36 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
   <!-- Footer-->
   <footer class="cs-footer bg-dark pt-5 pb-4">
     <div class="container pb-2 text-center text-md-left">
       <div class="row pt-md-2 pb-3">
         <div class="col-lg-3 col-md-4 pb-4">
-          <a class="d-inline-block mb-3" href="htpps://sbobetmaju.gtihub.io" style="width: 153px;">
-            <img src="img/logo-default-sbo.png" alt="sbobetmaju-xyz.github.io" />
-          </a>
-          <p class="font-size-sm text-light opacity-50 mb-0">Team collaboration made easy!</p>
+          <div class="bg-white mb-3">
+            <a class="d-inline-block mb-2 mt-1" href="htpps://sbobetmaju.gtihub.io" style="width: 153px;">
+              <img src="img/logo-default-sbo.png" alt="sbobetmaju-xyz.github.io" />
+            </a>
+          </div>
+          <p class="font-size-sm text-light opacity-50 mb-0">Agen SBOBET Terpercaya Indonesia.</p>
         </div>
         <div class="col-md-5 pt-2 pb-4">
           <div class="cs-widget cs-widget-light">
-            <h4 class="cs-widget-title mb-3">Support</h4>
-            <div class="d-lg-flex">
-              <ul class="mr-lg-5">
-                <li>
-                  <a class="cs-widget-link" href="mailto:support@example.com">
-                  <i class="fe-mail font-size-lg mr-2"></i>support@example.com</a>
-                </li>
-              </ul>
-              <ul>
-                <li><a class="cs-widget-link" href="tel:9107848015"><i class="fe-phone font-size-lg mr-2"></i>910-784-8015</a></li>
-              </ul>
+            <h4 class="cs-widget-title mb-3">Dukungan</h4>
+            <div class="row">
+              <div class="col-md-2">
+                <img src="img/dukungan/1.png" alt="sbobetmaju-xyz.github.io">
+              </div>
+              <div class="col-md-2">
+                <img src="img/dukungan/2.png" alt="sbobetmaju-xyz.github.io">
+              </div>
+              <div class="col-md-2">
+                <img src="img/dukungan/3.png" alt="sbobetmaju-xyz.github.io">
+              </div>
+              <div class="col-md-2">
+                <img src="img/dukungan/4.png" alt="sbobetmaju-xyz.github.io">
+              </div>
             </div>
           </div>
         </div>
@@ -580,7 +499,11 @@
       <p class="font-size-sm text-center mb-0"><span class="text-light opacity-50">© All rights reserved. </span><a class="nav-link-style nav-link-light" href="https://sbobetmaju.com" target="_blank" rel="noopener">Sbobetmaju</a></p>
     </div>
   </footer>
-  <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span><i class="btn-scroll-top-icon fe-arrow-up"> </i></a>
+  <!-- Back to top button-->
+  <a class="btn-scroll-top" href="#top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span>
+    <i class="btn-scroll-top-icon fe-arrow-up"> </i>
+  </a>
   <!-- Vendor scrits: js libraries and plugins-->
   <script src="vendor/jquery/dist/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -592,5 +515,11 @@
   <script src="vendor/lg-video.js/dist/lg-video.min.js"></script>
   <!-- Main theme script-->
   <script src="js/theme.min.js"></script>
+  <script>
+    $( 'ul.navbar-nav li' ).on( 'click', function() {
+      $( this ).parent().find( 'li.active' ).removeClass( 'active' );
+      $( this ).addClass( 'active' );
+    });
+  </script>
 </body>
 </html>
